@@ -29,4 +29,6 @@ class User extends Authenticatable implements LdapAuthenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // estos es una prueba para git hub 
 }
