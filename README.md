@@ -28,3 +28,17 @@ LDAP_TLS=false
   - [Steve Bauman](https://github.com/stevebauman) for [LdapRecord-Laravel](https://github.com/DirectoryTree/LdapRecord-Laravel)
   - [Forum Systems](https://www.forumsys.com/) for their [Online LDAP Test Server](https://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/)
   - [Conor](https://stackoverflow.com/users/6426405/conor) for [his answer on "cloning laravel project from github"](https://stackoverflow.com/a/39913449/2246865)
+
+
+
+## En linux para activar ldap se uso estos comandos.
+
+sudo apt-get install php-ldap
+
+## y despues se reinicio el apache
+
+service apache2 restart
+
+
+## En windows en Xampp, Buscar y editar C:\xampp\php\php.ini y descomentar " extension = php_ldap.dll "alrededor de la línea 965.
+Luego Reinicie XAMPP (reiniciar el servicio Apache) y usted debe ahora tener acceso a las funciones LDAP de PHP.
